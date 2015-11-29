@@ -1,3 +1,7 @@
+/**
+ * Перехват исключений для вывода в них
+ * пользовательских сообщений
+ */
 package com.unetis.orblanc.utils;
 
 public class MyException extends Exception {
