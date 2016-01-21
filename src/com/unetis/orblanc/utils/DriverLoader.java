@@ -26,9 +26,11 @@ public class DriverLoader {
 	 * Синглтон здесь используется в качестве шаблона для того, чтобы драйвер был загружен только один раз 
 	 * @author Степан Мельничук
 	 *
+	 *
 	 */
-	public static class LazyHolder {
-		public static final DriverLoader INSTANCE = new DriverLoader();
+	private DriverLoader(){}
+	private static class LazyHolder {
+		private static final DriverLoader INSTANCE = new DriverLoader();
 	}
 
 	public static DriverLoader getInstance() {
